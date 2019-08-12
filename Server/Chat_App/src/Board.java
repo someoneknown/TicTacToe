@@ -81,8 +81,8 @@ public class Board {
     }
 
     public boolean isDraw() {
-        if( xWon() || oWon() || !is_board_full()) return true;
-        return false;
+        if( xWon() || oWon() || !is_board_full()) return false;
+        return true;
     }
 
     public void Move(Integer gridPt, Player player) {
